@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/ikhlas-firlana/mongodb/issues"
   },
-  "homepage": "https://github.com/ikhlas-firlana/mongodb#readme"
+  "homepage": "https://github.com/ikhlas-firlana/mongodb#readme",
+  "devDependencies": {
+    "mongoose": "^5.9.7"
+  }
 }
