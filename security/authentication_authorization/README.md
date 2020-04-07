@@ -7,3 +7,21 @@
 - Analogy: your employed as an account and therefore may access the office and process orders
 
 
+# Role Base Access Controls
+
+## Privileges
+handle connection with : 
+### Resources
+Rule of Access to schema
+
+### Actions
+Rule of Do some operations
+
+
+## Example
+
+create Types of Users
+- Administrator
+- Developer / Your Apps
+- Data Scientist
+
