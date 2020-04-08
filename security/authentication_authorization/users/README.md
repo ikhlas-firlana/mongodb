@@ -1,7 +1,11 @@
 # Command
 initialize
 ```
+show dbs
+show roles
+```
+```
 use admin
-db.createUser({user: "admin", pwd: "admin", roles: ["userAdminAnyDatabase"]})
+db.createUser({user: "ikhlas", pwd: "ikhlas", roles: ["userAdminAnyDatabase"]})
 
 ```
