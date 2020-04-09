@@ -11,7 +11,7 @@ if already run, then run seperate command to check
 show dbs
 show roles
 ```
-there will be an error, for checking.
+there will be an error for checking.
 
 
 ## ADMIN
