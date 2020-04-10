@@ -20,10 +20,34 @@ for creating user in terminal `mongo` then run command
 use admin
 db.createUser({user: "ikhlas", pwd: "ikhlas", roles: ["userAdminAnyDatabase"]})
 ```
-for creating user admin. then login command
+for creating user admin. 
+then restart the service `mongo` with authentication
 ```
-db.auth('ikhlas','ikhlas')
+mongod --auth
 ```
-for getting authenticated as admin
+then open new terminal to start operate database using
+```
+mongo -u ikhlas -p ikhlas --authenticationDatabase admin
+use admin
+```
+for getting authenticated as admin and login in admin database. 
 
+### Create new User and assign in database
+create the process new user need use an admin account so login as admin in new terminal
+```
+mongo -u ikhlas -p ikhlas --authenticationDatabase admin
+use admin
+```
+then create user and assign database example database `shop` with command
+```
+use shop
+db.createUser({ user: 'appDev', pwd: 'dev', roles": ["readWrite"]})
+```
+done create new user.
 
+## User operate for Database
+```
+mongo -u appDec -p dev --authenticationDatabase shop
+use shop
+db.products.insertOne({name: 'Book one', price: 3000})
+```
