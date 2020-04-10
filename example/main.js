@@ -23,9 +23,18 @@ async function main () {
 
         // do operation
         await Product.collection.insertOne({
-            name: "test 1",
-            description: "ok",
-            price: 0.1
+            name: "Book one",
+            price: 3
+        })
+        await Product.collection.insertOne({
+            name: "Book two",
+            description: "description more",
+            price: 5
+        })
+        await Product.collection.insertOne({
+            name: "Book three",
+            description: "description test",
+            price: 10
         })
             
     } catch (error) {

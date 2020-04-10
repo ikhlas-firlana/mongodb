@@ -14,7 +14,7 @@ show roles
 there will be an error for checking.
 
 
-## ADMIN
+## Create ADMIN
 for creating user in terminal `mongo` then run command
 ```
 use admin
@@ -41,13 +41,14 @@ use admin
 then create user and assign database example database `shop` with command
 ```
 use shop
-db.createUser({ user: 'appDev', pwd: 'dev', roles": ["readWrite"]})
+db.createUser({ user: 'appDev', pwd: 'dev', roles: ["readWrite"]})
 ```
 done create new user.
 
 ## User operate for Database
 ```
-mongo -u appDec -p dev --authenticationDatabase shop
+mongo -u appDev -p dev --authenticationDatabase shop
 use shop
 db.products.insertOne({name: 'Book one', price: 3000})
+db.products.insertOne({name: 'Book two', price: 500})
 ```
