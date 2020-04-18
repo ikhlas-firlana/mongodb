@@ -1,1 +1,1 @@
-mongod --auth --config /etc/mongod.conf
+mongod --config /etc/mongod.conf
