@@ -7,5 +7,6 @@ PATH_REPOSITORY={your path repository}
 ```
 start with 
 ```
-docker-compose up
+make build
+make docker
 ```
